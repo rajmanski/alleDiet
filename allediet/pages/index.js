@@ -9,6 +9,10 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <>
+    <Head>
+      <title>Alle Diet | Dietetyk dla Twojego zdrowia</title>
+      <link rel="icon" href="/eggplant2.png"></link>
+    </Head>
     <Navbar/>
       
     </>

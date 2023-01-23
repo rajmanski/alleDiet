@@ -13,6 +13,10 @@ module.exports = {
         'violet': '#6874e8',
       }
     },
+    fontFamily: {
+      'lato': ['Lato', 'sans-serif'],
+      'moja': ['Luxurious Script', 'cursive'],
+    }
   },
   plugins: [],
 }

@@ -9,7 +9,7 @@ export const Navbar = () => {
                         <Image width="48" height="48" src="/eggplant2.png" alt="eggplant" />
                         <p className="text-5xl hover:scale-100 font-moja">alle diet</p>
                     </div>
-                    <div id="right-section" className="flex flex-row gap-5 items-center">
+                    <div id="right-section" className="flex flex-row gap-5 items-center font-light">
                         <p className="hover:text-violet text-lg">O mnie</p>
                         <p className="hover:text-violet text-lg">Artykuły</p>
                         <p className="hover:text-violet text-lg">Cennik</p>

@@ -7,7 +7,7 @@ export const Navbar = () => {
                 <div className="flex flex-row items-center mx-auto justify-around text-center max-w-7xl">
                     <div id="logo" className="flex flex-row gap-2 items-center ">
                         <Image width="48" height="48" src="/eggplant2.png" alt="eggplant" />
-                        <p className="text-5xl hover:scale-100 font-moja">alle Diet</p>
+                        <p className="text-5xl hover:scale-100 font-moja">alle diet</p>
                     </div>
                     <div id="right-section" className="flex flex-row gap-5 items-center">
                         <p className="hover:text-violet text-lg">O mnie</p>

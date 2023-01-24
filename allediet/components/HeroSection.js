@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export const HeroSection = () => {
     return (
-        <section className="flex flex-row max-w-7xl items-center justify-center mx-auto mt-40 font-lato">
+        <section className="flex flex-row max-w-7xl items-center justify-center mx-auto mt-40 mb-40 font-lato">
             <div id="rigth" className="flex flex-col justify-center items-start gap-10 w-3/6  font-light pr-14" >
                 <h1 className="text-6xl leading-normal">Dietetyk, który wie w jaki sposób o Ciebie zadbać!</h1>
                 <p className="text-xl leading-normal tracking-wide">W alle diet zajmujemy się kompleksowym doradzctwem żywieniowym, pomocą w różych dolegliwościach zdrowotnych, rozpisywaniem diet. Podchodzimy do pacjenta w sposób holistyczny, skupiając się na przyczynach złego samopoczucia.</p>

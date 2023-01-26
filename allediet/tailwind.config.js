@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         'violet': '#6874e8',
+        'hoverViolet': '#8691ed',
       }
     },
     fontFamily: {

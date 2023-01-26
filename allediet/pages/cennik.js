@@ -7,8 +7,8 @@ export default function PriceList() {
             <Navbar/>
             <section id="pricelist" className="flex flex-col max-w-7xl items-center justify-center mx-auto mt-32 mb-20 font-lato font-thin">
                 <h1 className="text-6xl text-violet mb-20 ">Cennik</h1>
-                <div id="pricelistWrapper" className="flex flex-wrap flex-row gap-10">
-                    <div id="box" className="flex flex-col justify-between gap-10 border">
+                <div id="pricelistWrapper" className="flex flex-wrap flex-row justify-center gap-10">
+                    <div id="box" className="flex flex-col justify-between gap-10 border w-3/12 lg:w-4/6 md:w-5/6 shadow-md">
                         <div id="titleWrapper">
                             <h1 id="title" className="text-3xl text-violet bg-violet text-white p-6">Konsultacja dietetyczna</h1>
                         </div>
@@ -40,7 +40,7 @@ export default function PriceList() {
                         </div>
                         <p id="price" className="text-center flex justify-center"><span className="text-white bg-violet text-center py-3 px-20 mb-4 text-xl">200zł</span></p>
                     </div>
-                    <div id="box" className="flex flex-col justify-between gap-10 border">
+                    <div id="box" className="flex flex-col justify-between gap-10 border shadow-md w-3/12 lg:w-4/6 md:w-5/6">
                         <div id="titleWrapper">
                             <h1 id="title" className="text-3xl text-violet bg-violet text-white p-6">Wizyta kontrolna</h1>
                         </div>
@@ -72,7 +72,7 @@ export default function PriceList() {
                         </div>
                         <p id="price" className="text-center flex justify-center"><span className="text-white bg-violet text-center py-3 px-20 mb-4 text-xl">200zł</span></p>
                     </div>
-                    <div id="box" className="flex flex-col justify-between gap-10 border">
+                    <div id="box" className="flex flex-col justify-between gap-10 border shadow-md w-3/12 lg:w-4/6 md:w-5/6">
                         <div id="titleWrapper">
                             <h1 id="title" className="text-3xl text-violet bg-violet text-white p-6">Dieta</h1>
                         </div>

@@ -56,7 +56,7 @@ export const HowWeWork = () => {
               </h3>
             </div>
             <p>
-              Ostatnim etapem diagnostycznym jest weryfikacaj badań lekarskich,
+              Ostatnim etapem diagnostycznym jest weryfikacji badań lekarskich,
               które powinny powiedzieć dietetykowi, jakie są przyczyny złego
               samopoczucia. Dietetyk postawi rzetelną diagnozę, pokieruje
               pacjenta w jakis sposób powinien zająć się swoimi dolegliwosciami

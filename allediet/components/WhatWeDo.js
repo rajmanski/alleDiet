@@ -23,10 +23,10 @@ export const WhatWeDo = () => {
   }, [])
 
     return (
-        <div className="bg-gray-200  text-center mx-auto p-12 h-60 mb-20">
+        <div className="bg-gray-200  text-center mx-auto p-12 h-60 mb-20 md:p-6">
             <section className="max-w-7xl font-lato mx-auto flex flex-col gap-10">
-                <h2 className="text-4xl leading-normal font-thin ">Jakimi dolegliwościami się zajmujemy?</h2>
-                <p className="text-6xl text-violet"><span className='font-sans' ref={el}></span></p>
+                <h2 className="text-4xl leading-normal font-thin md:text-3xl">Jakimi dolegliwościami się zajmujemy?</h2>
+                <p className="text-6xl text-violet md:text-4xl sm:3xl"><span className='font-sans' ref={el}></span></p>
             </section>
         </div>
     )

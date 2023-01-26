@@ -9,14 +9,14 @@ export const HowWeWork = () => {
         </h1>
         <div id="boxWrapper" className="flex flex-row gap-10 lg:block lg:mx-auto lg:w-3/6 md:w-4/6 sm:w-5/6">
           <div id="box" className="flex flex-col justify-between gap-8 lg:mb-8">
-            <div className="flex-col gap-4 flex">
+            <div className="flex-col gap-4 flex items-center">
               <Image
                 width="48"
                 height="48"
                 src="/calendar.png"
                 alt="eggplant"
               />
-              <h3 className="text-3xl text-violet">
+              <h3 className="text-3xl text-violet text-center">
                 Umawiasz się na wizytę
               </h3>
             </div>
@@ -27,14 +27,14 @@ export const HowWeWork = () => {
             </p>
           </div>
           <div id="box" className="flex flex-col justify-between  gap-8 lg:mb-8">
-            <div className="flex-col flex gap-4">
+            <div className="flex-col flex gap-4 items-center">
               <Image
                 width="48"
                 height="48"
                 src="/stethoscope.png"
                 alt="eggplant"
               />
-              <h3 className="text-3xl text-violet">Odbywasz wizytę</h3>
+              <h3 className="text-3xl text-violet text-center">Odbywasz wizytę</h3>
             </div>
             <p>
               Wizyty odbywają się zarówno zdalnie jak i na miejscu. Na wizycie
@@ -44,14 +44,14 @@ export const HowWeWork = () => {
             </p>
           </div>
           <div id="box" className="flex flex-col justify-between  gap-8">
-            <div className="flex-col flex gap-4">
+            <div className="flex-col flex gap-4 items-center">
               <Image
                 width="48"
                 height="48"
                 src="/doctorsbag.png"
                 alt="eggplant"
               />
-              <h3 className="text-3xl text-violet">
+              <h3 className="text-3xl text-violet text-center">
                 Pojawiasz się z wynikami badań u dietetyka
               </h3>
             </div>

@@ -10,7 +10,7 @@ export default function PriceList() {
                 <div id="pricelistWrapper" className="flex flex-wrap flex-row justify-center gap-10">
                     <div id="box" className="flex flex-col justify-between gap-10 border w-3/12 lg:w-4/6 md:w-5/6 shadow-md">
                         <div id="titleWrapper">
-                            <h1 id="title" className="text-3xl text-violet bg-violet text-white p-6">Konsultacja dietetyczna</h1>
+                            <h1 id="title" className="text-3xl bg-violet text-white p-6 text-center">Konsultacja dietetyczna</h1>
                         </div>
                         <div id="list" className="px-3 flex flex-col gap-3">
                             <div id="row" className="flex flex-row items-center gap-3">
@@ -42,7 +42,7 @@ export default function PriceList() {
                     </div>
                     <div id="box" className="flex flex-col justify-between gap-10 border shadow-md w-3/12 lg:w-4/6 md:w-5/6">
                         <div id="titleWrapper">
-                            <h1 id="title" className="text-3xl text-violet bg-violet text-white p-6">Wizyta kontrolna</h1>
+                            <h1 id="title" className="text-3xl text-center bg-violet text-white p-6">Wizyta kontrolna</h1>
                         </div>
                         <div id="list" className="px-3 flex flex-col gap-3">
                             <div id="row" className="flex flex-row items-center gap-3">
@@ -74,7 +74,7 @@ export default function PriceList() {
                     </div>
                     <div id="box" className="flex flex-col justify-between gap-10 border shadow-md w-3/12 lg:w-4/6 md:w-5/6">
                         <div id="titleWrapper">
-                            <h1 id="title" className="text-3xl text-violet bg-violet text-white p-6">Dieta</h1>
+                            <h1 id="title" className="text-3xl text-center bg-violet text-white p-6">Dieta</h1>
                         </div>
                         <div id="list" className="px-3 flex flex-col gap-3">
                             <div id="row" className="flex flex-row items-center gap-3">

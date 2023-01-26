@@ -15,8 +15,12 @@ export default function Articles() {
                         </div>
                         <div id="articleInfo" className="w-4/6 flex flex-col items-start gap-4">
                             <h2 className="text-violet text-3xl hover:underline cursor-pointer">Właściwości lecznicze mięty</h2>
-                            <div id="dateAndAuthorWrapper" className="flex flex-row gap-6">
-                                <p>22 listopada 2022</p>
+                            <div id="dateAndAuthorWrapper" className="flex flex-row gap-6 justify-center items-center">
+                                <div id="dateWrapper" className="flex flex-row justify-between items-center">
+                                <Image width="40" height="40" src="/calendar.png" alt="calendar" />
+                                    <p>22 listopada 2022</p>
+                                </div>
+                                
                                 <span className="font-normal">autor: Aleksandra Dublas</span>
                             </div>
                             <p>Mięta pieprzowa, znana i popularna szczególnie latem, nie tylko zdobi nasze szklanki z wodą i cytryną dając nutę orzeźwienia w niesamowitym upale, ale także ma wiele właściwości zdrowotnych. Liście tego przepięknie pachnącego zioła mogą pływać w szkle praktycznie o każdej porze roku.</p>
@@ -29,8 +33,12 @@ export default function Articles() {
                         </div>
                         <div id="articleInfo" className="w-4/6 flex flex-col items-start gap-4">
                             <h2 className="text-violet text-3xl hover:underline cursor-pointer">Właściwości lecznicze mięty</h2>
-                            <div id="dateAndAuthorWrapper" className="flex flex-row gap-6">
-                                <p>22 listopada 2022</p>
+                            <div id="dateAndAuthorWrapper" className="flex flex-row gap-6 justify-center items-center">
+                                <div id="dateWrapper" className="flex flex-row justify-between items-center">
+                                <Image width="40" height="40" src="/calendar.png" alt="calendar" />
+                                    <p>22 listopada 2022</p>
+                                </div>
+                                
                                 <span className="font-normal">autor: Aleksandra Dublas</span>
                             </div>
                             <p>Mięta pieprzowa, znana i popularna szczególnie latem, nie tylko zdobi nasze szklanki z wodą i cytryną dając nutę orzeźwienia w niesamowitym upale, ale także ma wiele właściwości zdrowotnych. Liście tego przepięknie pachnącego zioła mogą pływać w szkle praktycznie o każdej porze roku.</p>
@@ -43,8 +51,12 @@ export default function Articles() {
                         </div>
                         <div id="articleInfo" className="w-4/6 flex flex-col items-start gap-4">
                             <h2 className="text-violet text-3xl hover:underline cursor-pointer">Właściwości lecznicze mięty</h2>
-                            <div id="dateAndAuthorWrapper" className="flex flex-row gap-6">
-                                <p>22 listopada 2022</p>
+                            <div id="dateAndAuthorWrapper" className="flex flex-row gap-6 justify-center items-center">
+                                <div id="dateWrapper" className="flex flex-row justify-between items-center">
+                                <Image width="40" height="40" src="/calendar.png" alt="calendar" />
+                                    <p>22 listopada 2022</p>
+                                </div>
+                                
                                 <span className="font-normal">autor: Aleksandra Dublas</span>
                             </div>
                             <p>Mięta pieprzowa, znana i popularna szczególnie latem, nie tylko zdobi nasze szklanki z wodą i cytryną dając nutę orzeźwienia w niesamowitym upale, ale także ma wiele właściwości zdrowotnych. Liście tego przepięknie pachnącego zioła mogą pływać w szkle praktycznie o każdej porze roku.</p>

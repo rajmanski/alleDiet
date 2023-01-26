@@ -3,7 +3,7 @@ import Image from "next/image"
 export const Navbar = () => {
     return (
         <>
-            <nav className="py-3 fixed top-0 left-0 right-0 bottom-auto shadow-sm font-lato">
+            <nav className="py-3 fixed top-0 left-0 right-0 bottom-auto shadow-sm font-lato z-20 bg-white opacity-95">
                 <div className="flex flex-row items-center mx-auto justify-around text-center max-w-7xl">
                     <div id="logo" className="flex flex-row gap-2 items-center ">
                         <Image width="48" height="48" src="/eggplant2.png" alt="eggplant" />

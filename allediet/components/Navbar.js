@@ -13,9 +13,9 @@ export const Navbar = () => {
                     </div></Link>
                     <div id="right-section" className="flex flex-row gap-5 items-center font-light">
                         <p className="hover:text-violet text-lg">O mnie</p>
-                        <Link href="/articles"><p className="hover:text-violet text-lg">Artykuły</p></Link>
+                        <Link href="/aktykuly"><p className="hover:text-violet text-lg">Artykuły</p></Link>
                         <Link href="/cennik"><p className="hover:text-violet text-lg">Cennik</p></Link>
-                        <p className="hover:text-violet text-lg">Kontakt</p>
+                        <Link href="/kontakt"><p className="hover:text-violet text-lg">Kontakt</p></Link>
                         <p className="hover:text-violet hover:text-xl text-lg border p-3 border-solid border-violet rounded-2xl text-violet">Umów wizytę</p>
                     </div>
                 </div>

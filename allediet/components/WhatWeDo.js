@@ -7,7 +7,7 @@ export const WhatWeDo = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-        strings:['Celiaklia', 'Zaburzenia odżywiania', 'Cukrzyca', 'Insulinoopornośc', 'Prowadzenie sportowców', 'Hashimoto', 'Zaburzenia pracy tarczycy'],
+        strings:['Celiakia', 'Zaburzenia odżywiania', 'Cukrzyca', 'Insulinoopornośc', 'Prowadzenie sportowców', 'Hashimoto', 'Zaburzenia pracy tarczycy'],
         // startDelay: 300,
         // typeSpeed: 300,
         // backDelay: 150,

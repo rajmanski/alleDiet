@@ -8,7 +8,7 @@ import { useEffect } from "react";
 export default function Articles() {
 
     useEffect(() => {
-        // getArticles();
+        getArticles();
         // addArticle('tytuł 3', 'opis3', 'lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala' )
     }, [])
     return (

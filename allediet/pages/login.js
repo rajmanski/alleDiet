@@ -1,3 +1,5 @@
+import { auth } from "@/lib/firebase";
+import { signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react"
 
 export default function Login() {
@@ -6,7 +8,9 @@ export default function Login() {
     const [password, setPassword] = useState();
 
     const handleLogin = () => {
-        
+        signInWithEmailAndPassword(auth, email, password)
+            .then((cred) => console.log("user logged in", cred.user))
+            .catch((e) => console.log('user not found', e))
     }
 
     return (

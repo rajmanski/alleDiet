@@ -1,5 +1,8 @@
 import { auth } from "@/lib/firebase";
 import { signInWithEmailAndPassword } from "firebase/auth";
+import { redirect } from "next/dist/server/api-utils";
+import { useRouter } from "next/router";
+import { NextResponse } from "next/server";
 import { useState } from "react"
 
 export default function Login() {
@@ -7,9 +10,12 @@ export default function Login() {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
 
+    const router = useRouter();
+
     const handleLogin = () => {
         signInWithEmailAndPassword(auth, email, password)
             .then((cred) => console.log("user logged in", cred.user))
+            .then(() => router.replace('/'))
             .catch((e) => console.log('user not found', e))
     }
 

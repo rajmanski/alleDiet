@@ -9,7 +9,7 @@ export default function Articles() {
 
     useEffect(() => {
         getArticles();
-        // addArticle('tytuł 3', 'opis3', 'lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala' )
+        // addArticle('tytuł 4', 'opis4', 'lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala' )
     }, [])
     return (
         <>

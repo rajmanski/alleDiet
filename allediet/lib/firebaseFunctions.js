@@ -4,10 +4,15 @@ import { db } from './firebase';
 const colRef = collection(db, `Articles`);
 const q = query(colRef, orderBy('date', 'desc'));
 
-export const getArticles = () => {
+export const getArticles = async () => {
+    let articles = []
+const querySnapshot = await getDocs(q);
+    querySnapshot.docs.forEach((doc) => {
+        articles.push({...doc.data(), id: doc.id })
+        })
+    console.log(articles);
+    return articles;
 
-// getDocs(colRef, orderBy("date", "asc"))
-//     .then((snapshot) => {
 //         let articles = []
 //         snapshot.docs.forEach((doc) => {
 //             articles.push({...doc.data(), id: doc.id })
@@ -15,13 +20,14 @@ export const getArticles = () => {
 //         console.log(articles);
 //     })
 
-onSnapshot(q, (snapshot) =>{
-    let articles = []
-    snapshot.docs.forEach((doc) => {
-    articles.push({...doc.data(), id: doc.id })
-})
-console.log(articles);
-})
+// onSnapshot(q, (snapshot) =>{
+//     let articles = []
+//     snapshot.docs.forEach((doc) => {
+//     articles.push({...doc.data(), id: doc.id })
+// })
+//     console.log(articles);
+//     return articles;
+// })
 }
 
 export const addArticle = (title, description, body) => {

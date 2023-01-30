@@ -2,14 +2,20 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { addArticle, getArticles } from "@/lib/firebaseFunctions";
 import Image from "next/image";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function Articles() {
 
+    const [articles, setArticles] = useState(null);
+
     useEffect(() => {
-        getArticles();
-        // addArticle('tytuł 4', 'opis4', 'lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala' )
+        (async () => {
+            const articles = await  getArticles();
+            setArticles(articles);
+          })();
+        // const articles = getArticles();
+        // setArticles(articles);
     }, [])
     return (
         <>
@@ -74,6 +80,12 @@ export default function Articles() {
                     </div>
                 </div>
             </section>
+            {articles && (
+                <>
+                <div dangerouslySetInnerHTML={{ __html: articles[0]?.body }}></div>
+                <div>lalal</div>
+                </>
+            )}
             <Footer/>
         </>
     )

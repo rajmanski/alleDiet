@@ -1,8 +1,16 @@
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import { addArticle, getArticles } from "@/lib/firebaseFunctions";
 import Image from "next/image";
+import { useEffect } from "react";
+
 
 export default function Articles() {
+
+    useEffect(() => {
+        // getArticles();
+        // addArticle('tytuł 3', 'opis3', 'lalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalalala' )
+    }, [])
     return (
         <>
             <Navbar/>

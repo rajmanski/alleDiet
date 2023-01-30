@@ -1,7 +1,21 @@
+import { auth } from '@/lib/firebase';
 import '@/styles/globals.css'
+import { onAuthStateChanged } from 'firebase/auth';
 import Head from 'next/head'
+import { useEffect } from 'react';
 
 export default function App({ Component, pageProps }) {
+
+  useEffect(() => {
+    onAuthStateChanged(auth, (user) => {
+      if (user) {
+        const uid = user.uid;
+      } else {
+      }
+  })
+  
+  }, []);
+
   return (
     <>
   <Head>

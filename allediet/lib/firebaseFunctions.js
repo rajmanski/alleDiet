@@ -30,11 +30,12 @@ const querySnapshot = await getDocs(q);
 // })
 }
 
-export const addArticle = (title, description, body) => {
+export const addArticle = (title, description, body, imageRef) => {
     addDoc(colRef, {
         title: title,
         description: description,
         date : serverTimestamp(),
         body: body,
+        imageRef: imageRef,
     })
 }

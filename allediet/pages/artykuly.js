@@ -27,7 +27,7 @@ export default function Articles() {
                     <hr />
                     {articles && (
                         articles.map((article) => (
-                            <Article body={article.body} date={article.date.seconds} key={article.id} title={article.title} description={article.description}/>
+                            <Article body={article.body} date={article.date.seconds} key={article.id} title={article.title} description={article.description} imageRef={article.imageRef}/>
                         ))
                     )}
                 </div>

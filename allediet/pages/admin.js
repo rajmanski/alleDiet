@@ -6,7 +6,7 @@ import { useRouter } from "next/router";
 import { useEffect, useState, useRef, useMemo } from "react";
 import JoditEditor from "jodit-react";
 import { addArticle } from "@/lib/firebaseFunctions";
-import { ref, uploadBytes } from "firebase/storage";
+import { getDownloadURL, ref, uploadBytes } from "firebase/storage";
 
 export default function Admin() {
   const [email, setEmail] = useState(null);
@@ -16,6 +16,7 @@ export default function Admin() {
   const editor = useRef(null);
   const [content, setContent] = useState("");
   const [photo, setPhoto] = useState(null);
+  const [imageUrl, setImageUrl] = useState("");
 
   const router = useRouter();
   const user = useAuth();
@@ -25,7 +26,7 @@ export default function Admin() {
   // }, [])
 
   const handleAddNewPost = () => {
-    addArticle(title, desc, content);
+    addArticle(title, desc, content, imageUrl);
     alert('Post został dodany do bazy danych!');
   }
 
@@ -34,14 +35,20 @@ export default function Admin() {
     setPhoto(e.target.files[0]);
   }
 
-  const handleSendImage = () => {
+  const handleSendImage = async () => {
     if (photo === null) {
         return;
     }
-    const imageRef = ref(storage, `images/${photo.name}`)
+    const imageRef = await ref(storage, `images/${photo.name}`)
     uploadBytes(imageRef, photo)
         .then(() => console.log('Image uploaded'));
-  }
+    setTimeout(() => {
+        const imageUrl =  getDownloadURL(ref(storage, `images/${photo.name}`))
+        .then((url) => setImageUrl(url))
+    }, 1000)
+    
+
+    }
 
   return (
     <>

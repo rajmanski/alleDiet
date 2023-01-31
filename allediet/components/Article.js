@@ -1,10 +1,10 @@
 import Image from "next/image"
 
-export const Article = ({body, date, title, description}) => {
+export const Article = ({body, date, title, description, imageRef}) => {
     return (
         <div id="article" className="my-10 flex flex-row gap-10 font-thin lg:flex-wrap lg:justify-center md:gap-5">
                         <div id="imageSection" className="w-2/6 h-auto lg:w-4/6">
-                            <Image width="600" height="600" src="/mieta.jpg" alt="mieta" className="h-full"/>
+                            <Image width="600" height="600" src={imageRef} alt="mieta" className="h-full"/>
                         </div>
                         <div id="articleInfo" className="w-4/6 flex flex-col items-start gap-4">
                             <h2 className="text-violet text-3xl hover:underline cursor-pointer">{title}</h2>

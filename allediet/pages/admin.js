@@ -1,11 +1,12 @@
 import { Navbar } from "@/components/Navbar";
 import useAuth from "@/hooks/useAuth";
-import { auth } from "@/lib/firebase";
+import { auth, storage } from "@/lib/firebase";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useRouter } from "next/router";
 import { useEffect, useState, useRef, useMemo } from "react";
 import JoditEditor from "jodit-react";
 import { addArticle } from "@/lib/firebaseFunctions";
+import { ref, uploadBytes } from "firebase/storage";
 
 export default function Admin() {
   const [email, setEmail] = useState(null);
@@ -14,6 +15,7 @@ export default function Admin() {
   const [desc, setDesc] = useState(null);
   const editor = useRef(null);
   const [content, setContent] = useState("");
+  const [photo, setPhoto] = useState(null);
 
   const router = useRouter();
   const user = useAuth();
@@ -25,6 +27,20 @@ export default function Admin() {
   const handleAddNewPost = () => {
     addArticle(title, desc, content);
     alert('Post został dodany do bazy danych!');
+  }
+
+  const handlePhoto = (e) => {
+    console.log(e.target.files[0]);
+    setPhoto(e.target.files[0]);
+  }
+
+  const handleSendImage = () => {
+    if (photo === null) {
+        return;
+    }
+    const imageRef = ref(storage, `images/${photo.name}`)
+    uploadBytes(imageRef, photo)
+        .then(() => console.log('Image uploaded'));
   }
 
   return (
@@ -54,7 +70,8 @@ export default function Admin() {
                   onBlur={(newContent) => setContent(newContent)} // preferred to use only this option to update the content for performance reasons
                   onChange={(newContent) => {}}
                 />
-                <button className="bg-violet p-2">Załącz zdjęcie</button>
+                <input type="file" onChange={handlePhoto}/>
+                <button className="bg-violet p-2" onClick={handleSendImage}>Załącz zdjęcie</button>
                 <button className="bg-violet p-2" onClick={handleAddNewPost}>Dodaj post</button>
               </div>
             )}

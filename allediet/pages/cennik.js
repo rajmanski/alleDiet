@@ -1,10 +1,15 @@
 import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
+import Head from "next/head";
 import Image from "next/image";
 
 export default function PriceList() {
     return (
         <>
+            <Head>
+                <title>Cennik | alle diet</title>
+                <link rel="icon" href="/eggplant2.png"></link>
+            </Head>
             <Navbar/>
             <section id="pricelist" className="flex flex-col max-w-7xl items-center justify-center mx-auto mt-32 mb-20 font-lato font-thin">
                 <h1 className="text-6xl text-violet mb-20 ">Cennik</h1>

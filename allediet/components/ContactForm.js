@@ -34,7 +34,7 @@ export const ContactForm = () => {
           <h2 className="text-4xl text-left md:text-3xl sm:text-2xl">Formularz kontaktowy</h2>
           <p className="text-lg">
             Skorzystaj z niego, aby zostawić nam wiadomość, pamiętaj, że nie
-            służy on do umawiania na wizytę
+            służy on do umawiania wizyt
           </p>
         </div>
       </div>

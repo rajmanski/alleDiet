@@ -9,7 +9,7 @@ export const Navbar = () => {
                 <Link href="/">
                     <div id="logo" className="flex flex-row gap-2 items-center ">
                         <Image width="48" height="48" src="/eggplant2.png" alt="eggplant" />
-                        <p className="text-5xl hover:scale-100 font-moja">alle diet</p>
+                        <p className="text-5xl hover:scale-100 font-moja">alle.diet</p>
                     </div></Link>
                     <div id="right-section" className="flex flex-row gap-5 items-center font-light">
                         <p className="hover:text-violet text-lg">O mnie</p>
